@@ -35,8 +35,20 @@ resizeImg.addEventListener('mouseup', (event) => {
 })
 
 //#6
-const keyColor = document.querySelector('.content-destination');
+const double = document.getElementsByTagName('h2');
 
-keyColor.addEventListener('dblclick', (event) => {
-  event.target.style.backgroundColor = 'blue';
+double.addEventListener('dblclick', (event) => {
+  event.target.style.color = 'green';
 });
+
+//#7
+const btnColor = document.querySelectorAll('.btn');
+
+btnColor.addEventListener('keydown', (event) => {
+  event.target.style.backgroundColor = 'pink';
+})
+
+//#8
+btnColor.addEventListener('keyup', (event) => {
+  event.target.stlye.backgroundColor = '#17A2B8'
+})
